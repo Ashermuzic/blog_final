@@ -15,7 +15,7 @@ const NotFound = () => {
               occured, go back to home page
             </p>
           </div>
-          <Link to={`/`}>
+          <Link to="/">
             <button>Go back</button>
           </Link>
         </div>
