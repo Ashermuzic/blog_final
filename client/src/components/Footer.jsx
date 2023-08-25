@@ -1,12 +1,16 @@
 import React from "react";
 import Logo from "../img/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
-      <img src={Logo} alt="" />
+      <p>Asher blog</p>
       <span>
-        Made with ♥️ and <b>React.js</b>.
+        Developed by{" "}
+        <Link target="_blank" to="https://github.com/Ashermuzic">
+          Asher.
+        </Link>
       </span>
     </footer>
   );

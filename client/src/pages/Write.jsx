@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import axios from "axios";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import moment from "moment";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
@@ -171,9 +171,15 @@ const Write = () => {
       {!currentUser && (
         <div className="isLogged">
           <p>
-            Ready to share your thoughts? 📝 <span>Log in</span> or
-            <span> sign up</span> to start posting and connecting with our
-            community!
+            Ready to share your thoughts? 📝
+            <span>
+              <Link to="/login">Log in </Link>
+            </span>
+            or
+            <span>
+              <Link to="/register"> Sign up </Link>
+            </span>
+            to start posting and connecting with our community!
           </p>
         </div>
       )}

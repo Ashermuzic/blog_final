@@ -20,6 +20,7 @@ const Home = () => {
     };
     fetchData();
   }, [cat]);
+
   // const posts = [
   //   {
   //     id: 1,
